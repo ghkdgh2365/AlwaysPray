@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4ABCAFFC23CDE77A00B0C458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCAFFB23CDE77A00B0C458 /* AppDelegate.swift */; };
+		4ABCAFFE23CDE77A00B0C458 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCAFFD23CDE77A00B0C458 /* SceneDelegate.swift */; };
+		4ABCB00023CDE77A00B0C458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCAFFF23CDE77A00B0C458 /* ViewController.swift */; };
+		4ABCB00323CDE77A00B0C458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABCB00123CDE77A00B0C458 /* Main.storyboard */; };
+		4ABCB00623CDE77A00B0C458 /* AlwaysPray.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCB00423CDE77A00B0C458 /* AlwaysPray.xcdatamodeld */; };
+		4ABCB00823CDE77A00B0C458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ABCB00723CDE77A00B0C458 /* Assets.xcassets */; };
+		4ABCB00B23CDE77A00B0C458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABCB00923CDE77A00B0C458 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4ABCAFF823CDE77A00B0C458 /* AlwaysPray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysPray.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ABCAFFB23CDE77A00B0C458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4ABCAFFD23CDE77A00B0C458 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4ABCAFFF23CDE77A00B0C458 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4ABCB00223CDE77A00B0C458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4ABCB00523CDE77A00B0C458 /* AlwaysPray.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlwaysPray.xcdatamodel; sourceTree = "<group>"; };
+		4ABCB00723CDE77A00B0C458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4ABCB00A23CDE77A00B0C458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4ABCB00C23CDE77A00B0C458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4ABCAFF523CDE77A00B0C458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4ABCAFEF23CDE77A00B0C458 = {
+			isa = PBXGroup;
+			children = (
+				4ABCAFFA23CDE77A00B0C458 /* AlwaysPray */,
+				4ABCAFF923CDE77A00B0C458 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4ABCAFF923CDE77A00B0C458 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ABCAFF823CDE77A00B0C458 /* AlwaysPray.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4ABCAFFA23CDE77A00B0C458 /* AlwaysPray */ = {
+			isa = PBXGroup;
+			children = (
+				4ABCAFFB23CDE77A00B0C458 /* AppDelegate.swift */,
+				4ABCAFFD23CDE77A00B0C458 /* SceneDelegate.swift */,
+				4ABCAFFF23CDE77A00B0C458 /* ViewController.swift */,
+				4ABCB00123CDE77A00B0C458 /* Main.storyboard */,
+				4ABCB00723CDE77A00B0C458 /* Assets.xcassets */,
+				4ABCB00923CDE77A00B0C458 /* LaunchScreen.storyboard */,
+				4ABCB00C23CDE77A00B0C458 /* Info.plist */,
+				4ABCB00423CDE77A00B0C458 /* AlwaysPray.xcdatamodeld */,
+			);
+			path = AlwaysPray;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4ABCAFF723CDE77A00B0C458 /* AlwaysPray */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ABCB00F23CDE77A00B0C458 /* Build configuration list for PBXNativeTarget "AlwaysPray" */;
+			buildPhases = (
+				4ABCAFF423CDE77A00B0C458 /* Sources */,
+				4ABCAFF523CDE77A00B0C458 /* Frameworks */,
+				4ABCAFF623CDE77A00B0C458 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlwaysPray;
+			productName = AlwaysPray;
+			productReference = 4ABCAFF823CDE77A00B0C458 /* AlwaysPray.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4ABCAFF023CDE77A00B0C458 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = hohwang;
+				TargetAttributes = {
+					4ABCAFF723CDE77A00B0C458 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 4ABCAFF323CDE77A00B0C458 /* Build configuration list for PBXProject "AlwaysPray" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4ABCAFEF23CDE77A00B0C458;
+			productRefGroup = 4ABCAFF923CDE77A00B0C458 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4ABCAFF723CDE77A00B0C458 /* AlwaysPray */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4ABCAFF623CDE77A00B0C458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ABCB00B23CDE77A00B0C458 /* LaunchScreen.storyboard in Resources */,
+				4ABCB00823CDE77A00B0C458 /* Assets.xcassets in Resources */,
+				4ABCB00323CDE77A00B0C458 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4ABCAFF423CDE77A00B0C458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ABCB00623CDE77A00B0C458 /* AlwaysPray.xcdatamodeld in Sources */,
+				4ABCB00023CDE77A00B0C458 /* ViewController.swift in Sources */,
+				4ABCAFFC23CDE77A00B0C458 /* AppDelegate.swift in Sources */,
+				4ABCAFFE23CDE77A00B0C458 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4ABCB00123CDE77A00B0C458 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4ABCB00223CDE77A00B0C458 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4ABCB00923CDE77A00B0C458 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4ABCB00A23CDE77A00B0C458 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4ABCB00D23CDE77A00B0C458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4ABCB00E23CDE77A00B0C458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4ABCB01023CDE77A00B0C458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlwaysPray/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.hohwang.AlwaysPray;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4ABCB01123CDE77A00B0C458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlwaysPray/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.hohwang.AlwaysPray;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4ABCAFF323CDE77A00B0C458 /* Build configuration list for PBXProject "AlwaysPray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ABCB00D23CDE77A00B0C458 /* Debug */,
+				4ABCB00E23CDE77A00B0C458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ABCB00F23CDE77A00B0C458 /* Build configuration list for PBXNativeTarget "AlwaysPray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ABCB01023CDE77A00B0C458 /* Debug */,
+				4ABCB01123CDE77A00B0C458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4ABCB00423CDE77A00B0C458 /* AlwaysPray.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4ABCB00523CDE77A00B0C458 /* AlwaysPray.xcdatamodel */,
+			);
+			currentVersion = 4ABCB00523CDE77A00B0C458 /* AlwaysPray.xcdatamodel */;
+			path = AlwaysPray.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4ABCAFF023CDE77A00B0C458 /* Project object */;
+}
