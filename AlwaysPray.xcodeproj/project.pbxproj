@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A5DFFBD23D073FB00875F97 /* pray.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5DFFBC23D073FB00875F97 /* pray.png */; };
 		4ABCAFFC23CDE77A00B0C458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCAFFB23CDE77A00B0C458 /* AppDelegate.swift */; };
 		4ABCAFFE23CDE77A00B0C458 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCAFFD23CDE77A00B0C458 /* SceneDelegate.swift */; };
 		4ABCB00023CDE77A00B0C458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCAFFF23CDE77A00B0C458 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A5DFFBC23D073FB00875F97 /* pray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pray.png; path = ../../../../Downloads/pray.png; sourceTree = "<group>"; };
 		4ABCAFF823CDE77A00B0C458 /* AlwaysPray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysPray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABCAFFB23CDE77A00B0C458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ABCAFFD23CDE77A00B0C458 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		4ABCAFFA23CDE77A00B0C458 /* AlwaysPray */ = {
 			isa = PBXGroup;
 			children = (
+				4A5DFFBC23D073FB00875F97 /* pray.png */,
 				4ABCAFFB23CDE77A00B0C458 /* AppDelegate.swift */,
 				4ABCAFFD23CDE77A00B0C458 /* SceneDelegate.swift */,
 				4ABCAFFF23CDE77A00B0C458 /* ViewController.swift */,
@@ -131,6 +134,7 @@
 				4ABCB00B23CDE77A00B0C458 /* LaunchScreen.storyboard in Resources */,
 				4ABCB00823CDE77A00B0C458 /* Assets.xcassets in Resources */,
 				4ABCB00323CDE77A00B0C458 /* Main.storyboard in Resources */,
+				4A5DFFBD23D073FB00875F97 /* pray.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,16 +8,79 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]){
+            (authorized: Bool, error:Error?) in
+            if !authorized {
+                print("알림 허용을 하지 않았습니다.")
+            }
+        }
+        
+        let prayAction = UNNotificationAction(identifier: "addPray", title: "add Pray", options: [])
+        
+        let category = UNNotificationCategory(identifier: "prayCategory", actions: [prayAction], intentIdentifiers: [], options: [])
+        
+        UNUserNotificationCenter.current().setNotificationCategories([category])
+        
         return true
     }
+    
+    func scheduleNotification(_ period:String){
+        
+        let period = Double(period) ?? 1.0
+        
+        UNUserNotificationCenter.current().delegate = self
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: (period*3600), repeats: true)
+        let content = UNMutableNotificationContent()
+        content.title = "지금도 주님은 나와 함께 계셔요"
+        content.body = "항상 기뻐하라 쉬지 말고 기도하라 범사에 감사하라 이는 그리스도 예수 안에서 너희를 향하신 하나님의 뜻이니라(딤전 5:16-18)"
+        content.sound = UNNotificationSound.default
+        content.categoryIdentifier = "prayCategory"
+        guard let path = Bundle.main.path(forResource: "pray", ofType: "png") else{return}
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            let attatchment = try UNNotificationAttachment(identifier: "logo", url: url, options: nil)
+            content.attachments = [attatchment]
+        }catch{
+            print("The attachment could not be loaded.")
+        }
+        
+        let request = UNNotificationRequest(identifier: "prayNotification", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        UNUserNotificationCenter.current().add(request){ (error:Error?) in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping() -> Void){
+        
+//        let prayItem = Pray(context: persistentContainer.viewContext)
+//        prayItem.added = Date()
+//
+//        if response.actionIdentifier == "addPray" {
+//            prayItem.type = "기도했어요"
+//        }else{
+//            prayItem.type = "기도했어요"
+//        }
+//        self.saveContext()
+//        completionHandler()
+        
+    }
+    
 
     // MARK: UISceneSession Lifecycle
 
