@@ -50,7 +50,7 @@ class ViewController: UIViewController, UITableViewDataSource, UIPickerViewDeleg
         let prayType = prayItem.type
         cell.textLabel?.text = prayType
         
-        let prayDate = prayItem.added as! Date
+        let prayDate = prayItem.added!
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy MMMM d, hh:mm"
@@ -80,8 +80,16 @@ class ViewController: UIViewController, UITableViewDataSource, UIPickerViewDeleg
         self.timePicker.dataSource = self
         
         self.tableView.dataSource = self
-        
+        observerSetting()
         loadData()
+    }
+    
+    func observerSetting(){
+        let center = NotificationCenter.default
+        let mainQueue = OperationQueue.main
+        let _ = center.addObserver(forName: Notification.Name("tableReload"), object: nil, queue: mainQueue, using: {_ in
+            print("reload table view")
+        })
     }
     
     func loadData(){
@@ -92,15 +100,19 @@ class ViewController: UIViewController, UITableViewDataSource, UIPickerViewDeleg
         
         do {
             try prayItems = moc.fetch(prayRequest)
+            self.tableView.reloadData()
         } catch {
             print("Could not load data.")
         }
         
-        self.tableView.reloadData()
     }
     
     @IBAction func startReminding(_ sender: Any) {
         appDelegate?.scheduleNotification(timeArray[selectRow])
+        let time = timeArray[selectRow]
+        let sparklingHeart = "\u{1F496}"
+        Output_Alert(title: "알림 설정 성공\(sparklingHeart)", message: "이제 \(time)시간마다 알림이 와요 !", text: "확인")
+        
     }
     @IBAction func addPrayToDatabase(_ sender: UIButton) {
         let prayItem = Pray(context: moc)
@@ -114,6 +126,14 @@ class ViewController: UIViewController, UITableViewDataSource, UIPickerViewDeleg
         
         loadData()
         
+    }
+    func Output_Alert(title : String, message : String, text : String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: text, style: UIAlertAction.Style.cancel, handler: nil)
+
+        alertController.addAction(okButton)
+
+        return self.present(alertController, animated: true, completion: nil)
     }
 
 }

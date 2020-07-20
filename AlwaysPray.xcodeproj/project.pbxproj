@@ -28,6 +28,7 @@
 		4ABCB00723CDE77A00B0C458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ABCB00A23CDE77A00B0C458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ABCB00C23CDE77A00B0C458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD8695424C5574200591761 /* AlwaysPray.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlwaysPray.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 		4ABCAFFA23CDE77A00B0C458 /* AlwaysPray */ = {
 			isa = PBXGroup;
 			children = (
+				4AD8695424C5574200591761 /* AlwaysPray.entitlements */,
 				4A5DFFBC23D073FB00875F97 /* pray.png */,
 				4ABCAFFB23CDE77A00B0C458 /* AppDelegate.swift */,
 				4ABCAFFD23CDE77A00B0C458 /* SceneDelegate.swift */,
@@ -292,7 +294,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AlwaysPray/AlwaysPray.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLMSN7YH8Y;
 				INFOPLIST_FILE = AlwaysPray/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +305,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.hohwang.AlwaysPray;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -309,14 +315,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AlwaysPray/AlwaysPray.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLMSN7YH8Y;
 				INFOPLIST_FILE = AlwaysPray/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.hohwang.AlwaysPray;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alwayspray;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
