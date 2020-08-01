@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yEv-Zb-Bnp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--알림 설정-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlwaysPray" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIO-mb-p4c">
-                                <rect key="frame" x="72" y="165" width="116" height="112"/>
+                                <rect key="frame" x="72" y="209" width="116" height="112"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="112" id="GMd-AE-ISS"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="112" id="SWp-uh-Xoj"/>
@@ -27,14 +27,14 @@
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqn-We-DTq">
-                                <rect key="frame" x="74" y="285" width="112" height="30"/>
+                                <rect key="frame" x="74" y="329" width="112" height="30"/>
                                 <state key="normal" title="시간마다 알림 설정"/>
                                 <connections>
                                     <action selector="startReminding:" destination="BYZ-38-t0r" eventType="touchUpInside" id="63b-ee-ST2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etA-hr-zxL">
-                                <rect key="frame" x="226" y="171" width="100" height="100"/>
+                                <rect key="frame" x="226" y="215" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="dME-Ld-NqO"/>
                                     <constraint firstAttribute="height" constant="100" id="xEv-JI-qrs"/>
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="twl-hU-ML2">
-                                <rect key="frame" x="0.0" y="417" width="414" height="445"/>
+                                <rect key="frame" x="0.0" y="461" width="414" height="352"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="LbN-8e-sWx" detailTextLabel="kCB-Jp-Hxc" style="IBUITableViewCellStyleSubtitle" id="WXC-MB-nV6">
@@ -75,13 +75,13 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="삶에서 하나님을 잊지 마세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsS-4P-Pku">
-                                <rect key="frame" x="112.5" y="69" width="189" height="20.5"/>
+                                <rect key="frame" x="112.5" y="113" width="189" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기도했어요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOg-hf-Eti">
-                                <rect key="frame" x="239" y="289.5" width="74" height="21"/>
+                                <rect key="frame" x="239" y="333.5" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -106,6 +106,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="알림 설정" id="xGq-9Z-gPe" userLabel="Navigation"/>
                     <connections>
                         <outlet property="tableView" destination="twl-hU-ML2" id="LMP-ax-gEg"/>
                         <outlet property="timePicker" destination="RIO-mb-p4c" id="pZz-dP-eiQ"/>
@@ -113,10 +114,66 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1952.1739130434785" y="118.52678571428571"/>
+        </scene>
+        <!--달력-->
+        <scene sceneID="NBo-Q8-Un8">
+            <objects>
+                <viewController id="oEk-es-Jnl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tHX-Ew-fET">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6ca-2w-izu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="달력" image="calendar" catalog="system" id="HWg-yw-byM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBq-dH-8Zt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="837.72321428571422"/>
+        </scene>
+        <!--NavigationController-->
+        <scene sceneID="xp2-vZ-2UA">
+            <objects>
+                <navigationController title="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="JSh-i6-Kgw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="알림 설정" image="bell" catalog="system" id="xDm-oo-koF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ALa-kR-dfQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="K9X-de-opa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Mw-GC-4C7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="118.52678571428571"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wSz-Wh-Ik5">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yEv-Zb-Bnp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yKE-h0-4NE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JSh-i6-Kgw" kind="relationship" relationship="viewControllers" id="asL-hD-25k"/>
+                        <segue destination="oEk-es-Jnl" kind="relationship" relationship="viewControllers" id="hrb-XF-Nw5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zUn-Xf-qiY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bell" catalog="system" width="128" height="124"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="pray" width="256" height="256"/>
     </resources>
 </document>
