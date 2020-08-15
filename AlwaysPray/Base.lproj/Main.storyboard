@@ -119,14 +119,31 @@
         <!--달력-->
         <scene sceneID="NBo-Q8-Un8">
             <objects>
-                <viewController id="oEk-es-Jnl" sceneMemberID="viewController">
+                <viewController id="oEk-es-Jnl" customClass="CalendarViewController" customModule="AlwaysPray" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tHX-Ew-fET">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Upv-sd-vM2" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="B7N-SK-oEh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Upv-sd-vM2" firstAttribute="leading" secondItem="6ca-2w-izu" secondAttribute="leading" id="JuV-mK-CEf"/>
+                            <constraint firstItem="Upv-sd-vM2" firstAttribute="top" secondItem="6ca-2w-izu" secondAttribute="top" id="UQK-vn-a5M"/>
+                            <constraint firstItem="6ca-2w-izu" firstAttribute="trailing" secondItem="Upv-sd-vM2" secondAttribute="trailing" id="wC5-S3-cSO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6ca-2w-izu"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="달력" image="calendar" catalog="system" id="HWg-yw-byM"/>
+                    <connections>
+                        <outlet property="calendar" destination="Upv-sd-vM2" id="tLw-lG-eHO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBq-dH-8Zt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

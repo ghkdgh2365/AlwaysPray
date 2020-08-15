@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242A3A465F6141C579067F93 /* Pods_AlwaysPray.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551BF7A606E75EE1FD3CE4B /* Pods_AlwaysPray.framework */; };
 		4A5DFFBD23D073FB00875F97 /* pray.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5DFFBC23D073FB00875F97 /* pray.png */; };
+		4A8DE4EF24D595F900FB25AF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DE4EE24D595F900FB25AF /* CalendarViewController.swift */; };
 		4ABCAFFC23CDE77A00B0C458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCAFFB23CDE77A00B0C458 /* AppDelegate.swift */; };
 		4ABCAFFE23CDE77A00B0C458 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCAFFD23CDE77A00B0C458 /* SceneDelegate.swift */; };
 		4ABCB00023CDE77A00B0C458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCAFFF23CDE77A00B0C458 /* ViewController.swift */; };
@@ -18,7 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1551BF7A606E75EE1FD3CE4B /* Pods_AlwaysPray.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlwaysPray.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		246D0862CC2589371E972A4F /* Pods-AlwaysPray.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysPray.debug.xcconfig"; path = "Target Support Files/Pods-AlwaysPray/Pods-AlwaysPray.debug.xcconfig"; sourceTree = "<group>"; };
 		4A5DFFBC23D073FB00875F97 /* pray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pray.png; path = ../../../../Downloads/pray.png; sourceTree = "<group>"; };
+		4A8DE4EE24D595F900FB25AF /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		4ABCAFF823CDE77A00B0C458 /* AlwaysPray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysPray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABCAFFB23CDE77A00B0C458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ABCAFFD23CDE77A00B0C458 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +34,7 @@
 		4ABCB00A23CDE77A00B0C458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ABCB00C23CDE77A00B0C458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AD8695424C5574200591761 /* AlwaysPray.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlwaysPray.entitlements; sourceTree = "<group>"; };
+		602B53A07078B8765B7433B6 /* Pods-AlwaysPray.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysPray.release.xcconfig"; path = "Target Support Files/Pods-AlwaysPray/Pods-AlwaysPray.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +42,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242A3A465F6141C579067F93 /* Pods_AlwaysPray.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F0B48D10C73F15476FB32FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				246D0862CC2589371E972A4F /* Pods-AlwaysPray.debug.xcconfig */,
+				602B53A07078B8765B7433B6 /* Pods-AlwaysPray.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4ABCAFEF23CDE77A00B0C458 = {
 			isa = PBXGroup;
 			children = (
 				4ABCAFFA23CDE77A00B0C458 /* AlwaysPray */,
 				4ABCAFF923CDE77A00B0C458 /* Products */,
+				2F0B48D10C73F15476FB32FB /* Pods */,
+				BFA72A70B792E5EB2A382659 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +84,7 @@
 				4ABCAFFB23CDE77A00B0C458 /* AppDelegate.swift */,
 				4ABCAFFD23CDE77A00B0C458 /* SceneDelegate.swift */,
 				4ABCAFFF23CDE77A00B0C458 /* ViewController.swift */,
+				4A8DE4EE24D595F900FB25AF /* CalendarViewController.swift */,
 				4ABCB00123CDE77A00B0C458 /* Main.storyboard */,
 				4ABCB00723CDE77A00B0C458 /* Assets.xcassets */,
 				4ABCB00923CDE77A00B0C458 /* LaunchScreen.storyboard */,
@@ -75,6 +94,14 @@
 			path = AlwaysPray;
 			sourceTree = "<group>";
 		};
+		BFA72A70B792E5EB2A382659 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1551BF7A606E75EE1FD3CE4B /* Pods_AlwaysPray.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4ABCB00F23CDE77A00B0C458 /* Build configuration list for PBXNativeTarget "AlwaysPray" */;
 			buildPhases = (
+				E7509EDC4F78C07732755516 /* [CP] Check Pods Manifest.lock */,
 				4ABCAFF423CDE77A00B0C458 /* Sources */,
 				4ABCAFF523CDE77A00B0C458 /* Frameworks */,
 				4ABCAFF623CDE77A00B0C458 /* Resources */,
+				EFFCAA0A8F20A9C64D9EC29E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,11 +171,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E7509EDC4F78C07732755516 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlwaysPray-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFFCAA0A8F20A9C64D9EC29E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlwaysPray/Pods-AlwaysPray-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlwaysPray/Pods-AlwaysPray-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlwaysPray/Pods-AlwaysPray-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4ABCAFF423CDE77A00B0C458 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8DE4EF24D595F900FB25AF /* CalendarViewController.swift in Sources */,
 				4ABCB00623CDE77A00B0C458 /* AlwaysPray.xcdatamodeld in Sources */,
 				4ABCB00023CDE77A00B0C458 /* ViewController.swift in Sources */,
 				4ABCAFFC23CDE77A00B0C458 /* AppDelegate.swift in Sources */,
@@ -292,6 +364,7 @@
 		};
 		4ABCB01023CDE77A00B0C458 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246D0862CC2589371E972A4F /* Pods-AlwaysPray.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AlwaysPray/AlwaysPray.entitlements;
@@ -313,6 +386,7 @@
 		};
 		4ABCB01123CDE77A00B0C458 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 602B53A07078B8765B7433B6 /* Pods-AlwaysPray.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AlwaysPray/AlwaysPray.entitlements;
