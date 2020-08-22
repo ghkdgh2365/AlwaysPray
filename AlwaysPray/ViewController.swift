@@ -53,7 +53,7 @@ class ViewController: UIViewController, UITableViewDataSource, UIPickerViewDeleg
         let prayDate = prayItem.added!
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy MMMM d, hh:mm"
+        dateFormatter.dateFormat = "yyyy/MM/d, a hh:mm"
         
         cell.detailTextLabel?.text = dateFormatter.string(from: prayDate)
         

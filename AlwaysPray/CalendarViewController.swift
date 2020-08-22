@@ -31,13 +31,28 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         moc = appDelegate?.persistentContainer.viewContext
         
         calendar.dataSource = self
         calendar.delegate = self
         
         loadData()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        loadData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let weekDayLabel = calendar.calendarWeekdayView.weekdayLabels
+        for (index, weekDay) in weekDayLabel.enumerated() {
+            if (index == 0){
+                weekDay.textColor = UIColor.red
+            } else if (index > 0 && index < 6){
+                weekDay.textColor = UIColor.black
+            }
+        }
     }
     
     func loadData(){
@@ -70,6 +85,7 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
     }
     
     func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, titleDefaultColorFor date: Date) -> UIColor? {
+        calendar.appearance.headerDateFormat = "yyyy-MM"
         let dateString : String = dateFormatter1.string(from:date)
         if self.titleDefaultColors.contains(dateString) {
             return .white
@@ -87,5 +103,7 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
         }
         return appearance.borderDefaultColor
     }
+    
+    
     
 }
