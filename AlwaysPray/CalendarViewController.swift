@@ -40,11 +40,8 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
         loadData()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        loadData()
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
+        loadData()
         let weekDayLabel = calendar.calendarWeekdayView.weekdayLabels
         for (index, weekDay) in weekDayLabel.enumerated() {
             if (index == 0){
@@ -53,6 +50,7 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
                 weekDay.textColor = UIColor.black
             }
         }
+        calendar.reloadData()
     }
     
     func loadData(){

@@ -370,13 +370,14 @@
 				CODE_SIGN_ENTITLEMENTS = AlwaysPray/AlwaysPray.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.03;
 				DEVELOPMENT_TEAM = NLMSN7YH8Y;
 				INFOPLIST_FILE = AlwaysPray/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.03;
 				PRODUCT_BUNDLE_IDENTIFIER = net.hohwang.AlwaysPray;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -393,13 +394,14 @@
 				CODE_SIGN_ENTITLEMENTS = AlwaysPray/AlwaysPray.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.03;
 				DEVELOPMENT_TEAM = NLMSN7YH8Y;
 				INFOPLIST_FILE = AlwaysPray/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.03;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alwayspray;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
