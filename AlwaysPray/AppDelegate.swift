@@ -44,15 +44,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         let content = UNMutableNotificationContent()
         let bibleVerses = [
             "항상 기뻐하라 쉬지 말고 기도하라 범사에 감사하라 이는 그리스도 예수 안에서 너희를 향하신 하나님의 뜻이니라(살전 5:16-18)",
-            "하나님이 우리에게 주신 것은 두려워하는 마음이 아니요 오직 능력과 사랑과 절제하는 마음이니(딤후 1:7)",
-            "누구든지 주의 이름을 부르는 자는 구원을 받으리라(롬 10:13)",
-            "내가 내게 명령한 것이 아니냐 강하고 담대하라 두려워하지 말며 놀라지 말라 네가 어디로 가든지 네 하나님 여호와가 너와 함께 하느니라 하시니라(수 1:9)",
-            "너는 범사에 그를 인정하라 그리하면 네 길을 지도하시리라(잠 3:6)",
-            "우리가 먹을 것과 입을 것이 있은즉 족한 줄로 알 것이니라(딤전 6:8)",
-            "오직 여호와의 율법을 즐거워하여 그의 율법을 주야로 묵상하는도다(시 1:2)"
         ]
         content.title = "지금도 주님은 나와 함께 계셔요"
-        content.body = bibleVerses.randomElement()!
+        content.body = bibleVerses[0]
         content.sound = UNNotificationSound.default
         content.categoryIdentifier = "prayCategory"
         guard let path = Bundle.main.path(forResource: "pray", ofType: "png") else{return}

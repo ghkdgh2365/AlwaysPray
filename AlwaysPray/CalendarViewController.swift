@@ -41,7 +41,6 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        loadData()
         let weekDayLabel = calendar.calendarWeekdayView.weekdayLabels
         for (index, weekDay) in weekDayLabel.enumerated() {
             if (index == 0){
@@ -51,6 +50,7 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
             }
         }
         calendar.reloadData()
+        loadData()
     }
     
     func loadData(){
@@ -58,6 +58,8 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
         
         let sortDescriptor = NSSortDescriptor(key: "added", ascending: false)
         prayRequest.sortDescriptors = [sortDescriptor]
+        let currentDate = NSDate.now
+        self.fillDefaultColors[self.dateFormatter1.string(from: currentDate)] = UIColor.orange
         
         do {
             try prayItems = moc.fetch(prayRequest)
@@ -79,7 +81,7 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
         if let color = self.fillDefaultColors[key] {
             return color
         }
-        return nil
+        return nil 
     }
     
     func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, titleDefaultColorFor date: Date) -> UIColor? {

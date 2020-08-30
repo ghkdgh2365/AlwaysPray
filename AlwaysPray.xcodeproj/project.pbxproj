@@ -21,7 +21,7 @@
 
 /* Begin PBXFileReference section */
 		1551BF7A606E75EE1FD3CE4B /* Pods_AlwaysPray.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlwaysPray.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		246D0862CC2589371E972A4F /* Pods-AlwaysPray.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysPray.debug.xcconfig"; path = "Target Support Files/Pods-AlwaysPray/Pods-AlwaysPray.debug.xcconfig"; sourceTree = "<group>"; };
+		246D0862CC2589371E972A4F /* Pods-AlwaysPray */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Pods-AlwaysPray"; path = "../../AlwaysPray/Pods/Target Support Files/Pods-AlwaysPray"; sourceTree = "<group>"; };
 		4A5DFFBC23D073FB00875F97 /* pray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pray.png; path = ../../../../Downloads/pray.png; sourceTree = "<group>"; };
 		4A8DE4EE24D595F900FB25AF /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		4ABCAFF823CDE77A00B0C458 /* AlwaysPray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysPray.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +35,7 @@
 		4ABCB00C23CDE77A00B0C458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AD8695424C5574200591761 /* AlwaysPray.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlwaysPray.entitlements; sourceTree = "<group>"; };
 		602B53A07078B8765B7433B6 /* Pods-AlwaysPray.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysPray.release.xcconfig"; path = "Target Support Files/Pods-AlwaysPray/Pods-AlwaysPray.release.xcconfig"; sourceTree = "<group>"; };
+		C4516077D52E70692BEB701B /* Pods-AlwaysPray.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysPray.debug.xcconfig"; path = "Target Support Files/Pods-AlwaysPray/Pods-AlwaysPray.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +53,9 @@
 		2F0B48D10C73F15476FB32FB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				246D0862CC2589371E972A4F /* Pods-AlwaysPray.debug.xcconfig */,
+				246D0862CC2589371E972A4F /* Pods-AlwaysPray */,
 				602B53A07078B8765B7433B6 /* Pods-AlwaysPray.release.xcconfig */,
+				C4516077D52E70692BEB701B /* Pods-AlwaysPray.debug.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -364,7 +366,7 @@
 		};
 		4ABCB01023CDE77A00B0C458 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 246D0862CC2589371E972A4F /* Pods-AlwaysPray.debug.xcconfig */;
+			baseConfigurationReference = C4516077D52E70692BEB701B /* Pods-AlwaysPray.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AlwaysPray/AlwaysPray.entitlements;

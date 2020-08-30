@@ -1,0 +1,6 @@
+framework module Pods_AlwaysPray {
+  umbrella header "Pods-AlwaysPray-umbrella.h"
+
+  export *
+  module * { export * }
+}
