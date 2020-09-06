@@ -8,5 +8,9 @@ target 'AlwaysPray' do
   # Pods for AlwaysPray
   
   pod 'FSCalendar'
-
+  pod 'OneSignal', '>= 2.11.2', '< 3.0'
+  
+  target 'OneSignalNotificationServiceExtension' do
+    pod 'OneSignal', '>= 2.11.2', '< 3.0'
+  end
 end

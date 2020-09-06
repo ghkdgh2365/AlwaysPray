@@ -1,0 +1,6 @@
+framework module Pods_AlwaysPray_OneSignalNotificationServiceExtension {
+  umbrella header "Pods-AlwaysPray-OneSignalNotificationServiceExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

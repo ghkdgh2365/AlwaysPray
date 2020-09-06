@@ -10,6 +10,8 @@
 		242A3A465F6141C579067F93 /* Pods_AlwaysPray.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551BF7A606E75EE1FD3CE4B /* Pods_AlwaysPray.framework */; };
 		4A5DFFBD23D073FB00875F97 /* pray.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5DFFBC23D073FB00875F97 /* pray.png */; };
 		4A8DE4EF24D595F900FB25AF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DE4EE24D595F900FB25AF /* CalendarViewController.swift */; };
+		4AAE924F25050E8F00A8D5F3 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE924E25050E8F00A8D5F3 /* NotificationService.swift */; };
+		4AAE925325050E8F00A8D5F3 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4AAE924C25050E8F00A8D5F3 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4ABCAFFC23CDE77A00B0C458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCAFFB23CDE77A00B0C458 /* AppDelegate.swift */; };
 		4ABCAFFE23CDE77A00B0C458 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCAFFD23CDE77A00B0C458 /* SceneDelegate.swift */; };
 		4ABCB00023CDE77A00B0C458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCAFFF23CDE77A00B0C458 /* ViewController.swift */; };
@@ -17,13 +19,43 @@
 		4ABCB00623CDE77A00B0C458 /* AlwaysPray.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCB00423CDE77A00B0C458 /* AlwaysPray.xcdatamodeld */; };
 		4ABCB00823CDE77A00B0C458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ABCB00723CDE77A00B0C458 /* Assets.xcassets */; };
 		4ABCB00B23CDE77A00B0C458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABCB00923CDE77A00B0C458 /* LaunchScreen.storyboard */; };
+		B080B25EA7D96EA40626D5A0 /* Pods_AlwaysPray_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCFD426165471F66CDF30B5 /* Pods_AlwaysPray_OneSignalNotificationServiceExtension.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4AAE925125050E8F00A8D5F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ABCAFF023CDE77A00B0C458 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AAE924B25050E8F00A8D5F3;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4AAE925425050E8F00A8D5F3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4AAE925325050E8F00A8D5F3 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0CCFD426165471F66CDF30B5 /* Pods_AlwaysPray_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlwaysPray_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1551BF7A606E75EE1FD3CE4B /* Pods_AlwaysPray.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlwaysPray.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		246D0862CC2589371E972A4F /* Pods-AlwaysPray */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Pods-AlwaysPray"; path = "../../AlwaysPray/Pods/Target Support Files/Pods-AlwaysPray"; sourceTree = "<group>"; };
+		4A0E2B492505184400C8F6C6 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		4A5DFFBC23D073FB00875F97 /* pray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pray.png; path = ../../../../Downloads/pray.png; sourceTree = "<group>"; };
 		4A8DE4EE24D595F900FB25AF /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		4AAE924C25050E8F00A8D5F3 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AAE924E25050E8F00A8D5F3 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		4AAE925025050E8F00A8D5F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ABCAFF823CDE77A00B0C458 /* AlwaysPray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysPray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABCAFFB23CDE77A00B0C458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ABCAFFD23CDE77A00B0C458 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,9 +68,19 @@
 		4AD8695424C5574200591761 /* AlwaysPray.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlwaysPray.entitlements; sourceTree = "<group>"; };
 		602B53A07078B8765B7433B6 /* Pods-AlwaysPray.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysPray.release.xcconfig"; path = "Target Support Files/Pods-AlwaysPray/Pods-AlwaysPray.release.xcconfig"; sourceTree = "<group>"; };
 		C4516077D52E70692BEB701B /* Pods-AlwaysPray.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysPray.debug.xcconfig"; path = "Target Support Files/Pods-AlwaysPray/Pods-AlwaysPray.debug.xcconfig"; sourceTree = "<group>"; };
+		F29580078733DCA1B0A47804 /* Pods-AlwaysPray-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysPray-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-AlwaysPray-OneSignalNotificationServiceExtension/Pods-AlwaysPray-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		F9580267011DF7F8427C13DB /* Pods-AlwaysPray-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysPray-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-AlwaysPray-OneSignalNotificationServiceExtension/Pods-AlwaysPray-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4AAE924925050E8F00A8D5F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B080B25EA7D96EA40626D5A0 /* Pods_AlwaysPray_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4ABCAFF523CDE77A00B0C458 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,14 +98,27 @@
 				246D0862CC2589371E972A4F /* Pods-AlwaysPray */,
 				602B53A07078B8765B7433B6 /* Pods-AlwaysPray.release.xcconfig */,
 				C4516077D52E70692BEB701B /* Pods-AlwaysPray.debug.xcconfig */,
+				F9580267011DF7F8427C13DB /* Pods-AlwaysPray-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				F29580078733DCA1B0A47804 /* Pods-AlwaysPray-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4AAE924D25050E8F00A8D5F3 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4A0E2B492505184400C8F6C6 /* OneSignalNotificationServiceExtension.entitlements */,
+				4AAE924E25050E8F00A8D5F3 /* NotificationService.swift */,
+				4AAE925025050E8F00A8D5F3 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 		4ABCAFEF23CDE77A00B0C458 = {
 			isa = PBXGroup;
 			children = (
 				4ABCAFFA23CDE77A00B0C458 /* AlwaysPray */,
+				4AAE924D25050E8F00A8D5F3 /* OneSignalNotificationServiceExtension */,
 				4ABCAFF923CDE77A00B0C458 /* Products */,
 				2F0B48D10C73F15476FB32FB /* Pods */,
 				BFA72A70B792E5EB2A382659 /* Frameworks */,
@@ -74,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				4ABCAFF823CDE77A00B0C458 /* AlwaysPray.app */,
+				4AAE924C25050E8F00A8D5F3 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				1551BF7A606E75EE1FD3CE4B /* Pods_AlwaysPray.framework */,
+				0CCFD426165471F66CDF30B5 /* Pods_AlwaysPray_OneSignalNotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +164,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4AAE924B25050E8F00A8D5F3 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AAE925725050E8F00A8D5F3 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				3390A1874E608DB868625855 /* [CP] Check Pods Manifest.lock */,
+				4AAE924825050E8F00A8D5F3 /* Sources */,
+				4AAE924925050E8F00A8D5F3 /* Frameworks */,
+				4AAE924A25050E8F00A8D5F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 4AAE924C25050E8F00A8D5F3 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4ABCAFF723CDE77A00B0C458 /* AlwaysPray */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4ABCB00F23CDE77A00B0C458 /* Build configuration list for PBXNativeTarget "AlwaysPray" */;
@@ -116,10 +191,12 @@
 				4ABCAFF523CDE77A00B0C458 /* Frameworks */,
 				4ABCAFF623CDE77A00B0C458 /* Resources */,
 				EFFCAA0A8F20A9C64D9EC29E /* [CP] Embed Pods Frameworks */,
+				4AAE925425050E8F00A8D5F3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4AAE925225050E8F00A8D5F3 /* PBXTargetDependency */,
 			);
 			name = AlwaysPray;
 			productName = AlwaysPray;
@@ -132,10 +209,13 @@
 		4ABCAFF023CDE77A00B0C458 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = hohwang;
 				TargetAttributes = {
+					4AAE924B25050E8F00A8D5F3 = {
+						CreatedOnToolsVersion = 11.6;
+					};
 					4ABCAFF723CDE77A00B0C458 = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -155,11 +235,19 @@
 			projectRoot = "";
 			targets = (
 				4ABCAFF723CDE77A00B0C458 /* AlwaysPray */,
+				4AAE924B25050E8F00A8D5F3 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4AAE924A25050E8F00A8D5F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4ABCAFF623CDE77A00B0C458 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -174,6 +262,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3390A1874E608DB868625855 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlwaysPray-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E7509EDC4F78C07732755516 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +326,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4AAE924825050E8F00A8D5F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AAE924F25050E8F00A8D5F3 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4ABCAFF423CDE77A00B0C458 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +347,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AAE925225050E8F00A8D5F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AAE924B25050E8F00A8D5F3 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 4AAE925125050E8F00A8D5F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4ABCB00123CDE77A00B0C458 /* Main.storyboard */ = {
@@ -250,6 +376,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4AAE925525050E8F00A8D5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9580267011DF7F8427C13DB /* Pods-AlwaysPray-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLMSN7YH8Y;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.hohwang.AlwaysPray.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AAE925625050E8F00A8D5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F29580078733DCA1B0A47804 /* Pods-AlwaysPray-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLMSN7YH8Y;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alwayspray.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4ABCB00D23CDE77A00B0C458 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -368,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C4516077D52E70692BEB701B /* Pods-AlwaysPray.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AlwaysPray/AlwaysPray.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -392,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 602B53A07078B8765B7433B6 /* Pods-AlwaysPray.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AlwaysPray/AlwaysPray.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -415,6 +589,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4AAE925725050E8F00A8D5F3 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AAE925525050E8F00A8D5F3 /* Debug */,
+				4AAE925625050E8F00A8D5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4ABCAFF323CDE77A00B0C458 /* Build configuration list for PBXProject "AlwaysPray" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,16 +1,20 @@
 PODS:
   - FSCalendar (2.8.1)
+  - OneSignal (2.15.3)
 
 DEPENDENCIES:
   - FSCalendar
+  - OneSignal (< 3.0, >= 2.11.2)
 
 SPEC REPOS:
   trunk:
     - FSCalendar
+    - OneSignal
 
 SPEC CHECKSUMS:
   FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
+  OneSignal: d85b81aa313ed8040522b884f556267883d652c2
 
-PODFILE CHECKSUM: c08b49005ae164b7502638810de9cf45e391a1d6
+PODFILE CHECKSUM: 153d6714aeb31794451bb3b51676034965d236b8
 
 COCOAPODS: 1.9.3
